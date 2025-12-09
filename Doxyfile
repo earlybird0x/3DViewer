@@ -1,0 +1,74 @@
+PROJECT_NAME                  = "3DViewer"
+PROJECT_BRIEF                 = "Qt/OpenGL 3D-просмотрщик"
+PROJECT_NUMBER                =
+OUTPUT_LANGUAGE               = Russian
+INPUT_ENCODING                = UTF-8
+MARKDOWN_SUPPORT              = YES
+AUTOLINK_SUPPORT              = YES
+JAVADOC_AUTOBRIEF             = YES
+FULL_PATH_NAMES               = NO
+
+INPUT                         = src tests README_RUS.md
+FILE_PATTERNS                 = *.h *.hpp *.hh *.hxx *.cpp *.cc *.cxx *.md
+RECURSIVE                     = YES
+EXCLUDE                       = src/3rdpart
+EXCLUDE_PATTERNS              = */3rdpart/*
+USE_MDFILE_AS_MAINPAGE        = README_RUS.md
+
+OUTPUT_DIRECTORY              = docs
+GENERATE_HTML                 = YES
+HTML_OUTPUT                   = html
+GENERATE_LATEX                = NO
+GENERATE_MAN                  = NO
+GENERATE_RTF                  = NO
+GENERATE_XML                  = NO
+GENERATE_DOCSET               = NO
+GENERATE_TREEVIEW             = YES
+TREEVIEW_WIDTH                = 250
+SEARCHENGINE                  = YES
+HTML_FILE_EXTENSION           = .html
+
+SOURCE_BROWSER                = YES
+INLINE_SOURCES                = YES
+REFERENCES_RELATION           = YES
+REFERENCED_BY_RELATION        = YES
+ALPHABETICAL_INDEX            = YES
+SORT_MEMBER_DOCS              = YES
+SORT_BRIEF_DOCS               = YES
+
+EXTRACT_ALL                   = YES
+EXTRACT_PRIVATE               = NO
+EXTRACT_PROTECTED             = NO
+EXTRACT_PACKAGE               = NO
+EXTRACT_STATIC                = YES
+EXTRACT_LOCAL_CLASSES         = YES
+EXTRACT_LOCAL_METHODS         = YES
+EXTRACT_ANON_NSPACES          = YES
+HIDE_UNDOC_CLASSES            = NO
+HIDE_UNDOC_MEMBERS            = NO
+
+ENABLE_PREPROCESSING          = YES
+MACRO_EXPANSION               = YES
+EXPAND_ONLY_PREDEF            = NO
+PREDEFINED                    = \
+  Q_OBJECT= \
+  signals=public: \
+  slots=public: \
+  Q_SIGNALS=public: \
+  Q_SLOTS=public: \
+  emit=
+SKIP_FUNCTION_MACROS          = YES
+
+QUIET                         = NO
+WARNINGS                      = YES
+WARN_IF_UNDOCUMENTED          = YES
+WARN_IF_DOC_ERROR             = YES
+WARN_NO_PARAMDOC              = YES
+WARN_LOGFILE                  = docs/doxygen_warnings.log
+
+HAVE_DOT                      = NO
+
+TAB_SIZE                      = 2
+MULTILINE_CPP_IS_BRIEF        = NO
+MSVC_MEMBER_FUNCTION_POINTERS = NO
+CLANG_ASSISTED_PARSING        = NO
